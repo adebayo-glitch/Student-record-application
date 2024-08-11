@@ -38,4 +38,11 @@ function addStudent(e) {
     const subject = document.getElementById('studentSubject').value;
     const grade = document.getElementById('studentGrade').value;
 
+    // Validate input
+    if (!validateInput(name, id, subject, grade)) {
+        return;
+    }
+
+   
+
 }

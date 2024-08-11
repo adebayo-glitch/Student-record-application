@@ -46,5 +46,8 @@ function addStudent(e) {
      const studentElement = createStudentElement(name, id, subject, grade);
      // Add new student to the list
      studentList.appendChild(studentElement);
-
+    // Clear form
+    studentForm.reset();
+    // Color code grades
+    colorCodeGrades();
 }

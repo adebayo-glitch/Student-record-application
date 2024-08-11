@@ -112,3 +112,6 @@ function colorCodeGrades() {
         }
     });
 }
+
+// event listener function to call colorCodeGrades when new student is added
+studentForm.addEventListener('submit', colorCodeGrades);

@@ -7,3 +7,4 @@ const studentTemplate = document.querySelector('#studentTemplate');
 
 // Event listeners
 studentForm.addEventListener('submit', addStudent);
+studentList.addEventListener('click', deleteStudent);

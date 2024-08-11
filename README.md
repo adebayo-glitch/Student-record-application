@@ -30,7 +30,3 @@ This application provides a user-friendly interface for managing student records
 ## Credits
 - Images sourced from [Pexels](https://www.pexels.com/).
 
-
-
-
-# Student-record-application

@@ -64,3 +64,10 @@ button {
 button:hover {
     background-color: #555;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}

@@ -18,3 +18,12 @@ window.addEventListener('beforeunload', (event) => {
     event.preventDefault();
     return "Are you sure you want to leave?";
 });
+
+// Dummy student images from Pexels
+const dummyImages = [
+    'https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    'https://images.pexels.com/photos/3772510/pexels-photo-3772510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    'https://images.pexels.com/photos/3775151/pexels-photo-3775151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    'https://images.pexels.com/photos/3775131/pexels-photo-3775131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+];
+

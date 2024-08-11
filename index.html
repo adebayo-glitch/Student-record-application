@@ -10,6 +10,39 @@
     <header>
         <h1>Student Record Application</h1>
     </header>
+    <main>
+        <section id="studentForm">
+            <h2>Add New Student</h2>
+            <form id="addStudentForm">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" name="studentName" required minlength="2">
+                
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" required pattern="[A-Z]{2}[0-9]{4}">
+                
+                <label for="studentSubject">Subject:</label>
+                <select id="studentSubject" name="studentSubject" required>
+                    <option value="">Select a subject</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Literature">Literature</option>
+                    <option value="History">History</option>
+                    <option value="Geography">Geography</option>
+                    <option value="Art">Art</option>
+                    <option value="Music">Music</option>
+                </select>
+                
+                <label for="studentGrade">Grade:</label>
+                <input type="number" id="studentGrade" name="studentGrade" required min="0" max="100">
+                
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+  
+    </main>
     
     <script src="app.js"></script>
 </body>

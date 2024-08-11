@@ -1,3 +1,10 @@
+:root {
+    --gradient-start: #4a00e0;
+    --gradient-end: #8e2de2;
+    --button-gradient-start: #f857a6;
+    --button-gradient-end: #ff5858;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -6,16 +13,13 @@ body {
     background-color: #f4f4f4;
 }
 
-header{
-    background-color: #333;
+header {
+    /* background-color: #333; */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     color: #fff;
     text-align: center;
     padding: 1rem;
-    transition: background-color 0.4s ease-in ;
-}
-
-header:hover{
-    background-color: cornflowerblue;
+    transition: all 0.3s ease;
 }
 
 footer {
@@ -23,7 +27,51 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+    transition: background-color 0.3s ease;
 }
+
+
+header:hover, footer:hover {
+    background: linear-gradient(135deg, var(--gradient-end), var(--gradient-start));
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover {
+    font-size: larger;
+    color: #0692a7;
+}
+
+.animated-title {
+    animation: fadeInDown 6s ease-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 main {
     padding: 2rem;
@@ -38,7 +86,6 @@ form {
     margin-bottom: 2rem;
 }
 
-
 label {
     display: block;
     margin-bottom: 0.5rem;
@@ -52,17 +99,21 @@ input, select {
     border-radius: 3px;
 }
 
+
 button {
-    background-color: #333;
+    background: linear-gradient(135deg, var(--button-gradient-start), var(--button-gradient-end));
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #555;
+    background: linear-gradient(135deg, var(--button-gradient-end), var(--button-gradient-start));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -70,8 +121,9 @@ table {
     border-collapse: collapse;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
 }
-
 
 th, td {
     text-align: left;
@@ -82,7 +134,13 @@ th, td {
 th {
     background-color: #f2f2f2;
     font-weight: bold;
+    color: #333;
 }
+
+tr:last-child td {
+    border-bottom: none;
+}
+
 .student-image {
     width: 40px;
     height: 40px;
@@ -91,9 +149,9 @@ th {
 }
 
 .delete-btn {
-    background-color: #ff4136;
+    background: linear-gradient(135deg, #ff4136, #ff5b62);
 }
 
 .delete-btn:hover {
-    background-color: #ff7066;
+    background: linear-gradient(135deg, #ff5b62, #ff4136);
 }

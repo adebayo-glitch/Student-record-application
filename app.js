@@ -42,7 +42,9 @@ function addStudent(e) {
     if (!validateInput(name, id, subject, grade)) {
         return;
     }
-
-   
+     // Create new student element
+     const studentElement = createStudentElement(name, id, subject, grade);
+     // Add new student to the list
+     studentList.appendChild(studentElement);
 
 }

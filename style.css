@@ -90,3 +90,10 @@ th {
     object-fit: cover;
 }
 
+.delete-btn {
+    background-color: #ff4136;
+}
+
+.delete-btn:hover {
+    background-color: #ff7066;
+}

@@ -94,3 +94,21 @@ function deleteStudent(e) {
         }
     }
 }
+
+// Iterate over students and color code grades
+function colorCodeGrades() {
+    const students = document.querySelectorAll('.student-item');
+    students.forEach(student => {
+        const gradeElement = student.querySelector('.student-grade');
+        const grade = parseInt(gradeElement.textContent);
+        if (grade >= 90) {
+            gradeElement.style.color = 'green';
+        } else if (grade >= 70) {
+            gradeElement.style.color = 'blue';
+        } else if (grade >= 50) {
+            gradeElement.style.color = 'orange';
+        } else {
+            gradeElement.style.color = 'red';
+        }
+    });
+}

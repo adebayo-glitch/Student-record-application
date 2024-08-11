@@ -8,3 +8,8 @@ const studentTemplate = document.querySelector('#studentTemplate');
 // Event listeners
 studentForm.addEventListener('submit', addStudent);
 studentList.addEventListener('click', deleteStudent);
+
+// BOM methods
+window.addEventListener('load', () => {
+    alert('Welcome to the Student Record Application!');
+});

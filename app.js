@@ -51,3 +51,12 @@ function addStudent(e) {
     // Color code grades
     colorCodeGrades();
 }
+// Validate input function
+function validateInput(name, id, subject, grade) {
+    if (name.length < 2) {
+        alert('Name must be at least 2 characters long.');
+        return false;
+    }
+    
+}
+

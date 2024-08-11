@@ -85,3 +85,12 @@ function createStudentElement(name, id, subject, grade) {
     fragment.appendChild(studentElement);
     return fragment;
 }
+
+// Delete student function
+function deleteStudent(e) {
+    if (e.target.classList.contains('delete-btn')) {
+        if (confirm('Are you sure you want to delete this student?')) {
+            e.target.closest('.student-item').remove();
+        }
+    }
+}

@@ -57,6 +57,18 @@ function validateInput(name, id, subject, grade) {
         alert('Name must be at least 2 characters long.');
         return false;
     }
-    
+    if (!/^[A-Z]{2}[0-9]{4}$/.test(id)) {
+        alert('Student ID must be in the format AA0000.');
+        return false;
+    }
+    if (subject === '') {
+        alert('Please select a subject.');
+        return false;
+    }
+    if (isNaN(grade) || grade < 0 || grade > 100) {
+        alert('Grade must be a number between 0 and 100.');
+        return false;
+    }
+    return true;
 }
 

@@ -13,3 +13,8 @@ studentList.addEventListener('click', deleteStudent);
 window.addEventListener('load', () => {
     alert('Welcome to the Student Record Application!');
 });
+
+window.addEventListener('beforeunload', (event) => {
+    event.preventDefault();
+    return "Are you sure you want to leave?";
+});

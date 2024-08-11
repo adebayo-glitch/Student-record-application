@@ -72,3 +72,16 @@ function validateInput(name, id, subject, grade) {
     return true;
 }
 
+// Create student element 
+function createStudentElement(name, id, subject, grade) {
+    const fragment = document.createDocumentFragment();
+    const studentElement = studentTemplate.content.cloneNode(true);
+    const randomImage = dummyImages[Math.floor(Math.random() * dummyImages.length)];
+    studentElement.querySelector('.student-image').src = randomImage;
+    studentElement.querySelector('.student-name').textContent = name;
+    studentElement.querySelector('.student-id').textContent = id;
+    studentElement.querySelector('.student-subject').textContent = subject;
+    studentElement.querySelector('.student-grade').textContent = grade;
+    fragment.appendChild(studentElement);
+    return fragment;
+}

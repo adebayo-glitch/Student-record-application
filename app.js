@@ -29,3 +29,13 @@ const dummyImages = [
     'https://images.pexels.com/photos/3775131/pexels-photo-3775161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 ];
 
+// Add student 
+function addStudent(e) {
+    e.preventDefault();
+    // Get form values
+    const name = document.getElementById('studentName').value;
+    const id = document.getElementById('studentId').value;
+    const subject = document.getElementById('studentSubject').value;
+    const grade = document.getElementById('studentGrade').value;
+
+}
